@@ -144,7 +144,7 @@ Cell 8   →  打包下载结果          Package & download results
 - [Seed-VC](https://github.com/Plachtaa/seed-vc) by Plachtaa — 底层语音转换模型 | The underlying voice conversion model
 - 本 Notebook 在官方基础上增加了：Kaggle 环境适配、中英双语文档、智能预览片段提取、后处理响度归一化流程。  
   This notebook adds: Kaggle-optimized setup, bilingual docs, smart preview extraction, and loudness normalization post-processing.
-
+- AI Assistant: [Claude](https://claude.ai) by Anthropic — 协助文档编写与代码整理
 ---
 
 ## 许可证 | License
