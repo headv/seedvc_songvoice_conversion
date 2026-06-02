@@ -12,8 +12,10 @@ Powered by the official [Seed-VC](https://github.com/Plachtaa/seed-vc) model, op
 
 | 输入 Input | 说明 Description |
 |-----------|-----------------|
-| `reference.wav` | 20~30 秒目标音色参考人声（你想转换成谁的声音）<br>20–30s clean vocal of the **target timbre** |
+| `reference.wav` | 不低于20秒目标音色参考人声（你想转换成谁的声音）<br>More than 20s clean vocal of the **target timbre** |
 | `source.wav` | 需要被转换的完整歌曲人声<br>Full-length song vocal to be converted |
+| 参考人声需用外部软件（Au/剪影/UVR5等）提取出纯人声不含配乐| 
+| You must use external software (such as Au, Capcut, UVR5, etc.) to extract the pure vocal track, free of any background music.| 
 
 **输出 Output：** 保留 `source.wav` 的旋律和节奏，音色替换为 `reference.wav` 的声音特征。  
 Same melody and timing as `source.wav`, with the voice characteristics of `reference.wav`.
@@ -48,10 +50,11 @@ Both files **must be clean vocals with no background music**, or conversion qual
 手动导入步骤 | Or manually:
 1. 打开 [kaggle.com/code](https://www.kaggle.com/code) → **New Notebook** → 上传 `seed-vc-songvoice_conversion_kaggle.ipynb`  
    Go to [kaggle.com/code](https://www.kaggle.com/code) → **New Notebook** → upload the `.ipynb` file
-2. 右侧面板 → **Accelerator** → 选择 `GPU T4 x2`  
-   Right panel → **Accelerator** → select `GPU T4 x2`
-3. 左侧面板 → **Input** → 添加你的 Dataset  
-   Left panel → **Input** → Add your dataset
+2. 上方菜单选择 **Setting** → **Accelerator** → 选择 `GPU T4 x2`  
+   Top Menu Choose **Setting**  → **Accelerator** → select `GPU T4 x2`
+3. 右侧面板 → **Input** → 添加你的 Dataset（音频路径添加后可以复制）  
+   Right panel → **Input** → Add your dataset(The audio path can be copied after it is added.)
+   
 
 ### 第四步 Step 4 — 修改 Cell 1 中的路径 | Configure Cell 1
 
