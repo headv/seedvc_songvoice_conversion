@@ -14,8 +14,7 @@ Powered by the official [Seed-VC](https://github.com/Plachtaa/seed-vc) model, op
 |-----------|-----------------|
 | `reference.wav` | 不低于20秒目标音色参考人声（你想转换成谁的声音）<br>More than 20s clean vocal of the **target timbre** |
 | `source.wav` | 需要被转换的完整歌曲人声<br>Full-length song vocal to be converted |
-| 参考人声需用外部软件（Au/剪影/UVR5等）提取出纯人声不含配乐| 
-| You must use external software (such as Au, Capcut, UVR5, etc.) to extract the pure vocal track, free of any background music.| 
+| 提醒(Remind) |参考人声需用外部软件（Au/剪影/UVR5等）提取出纯人声不含配乐<br>You must use external software (such as Au, Capcut, UVR5, etc.) to extract the pure vocal track, free of any background music.| 
 
 **输出 Output：** 保留 `source.wav` 的旋律和节奏，音色替换为 `reference.wav` 的声音特征。  
 Same melody and timing as `source.wav`, with the voice characteristics of `reference.wav`.
@@ -66,6 +65,8 @@ SRC_PATH = "/kaggle/input/your-dataset-name/source.wav"
 ```
 
 ### 第五步 Step 5 — 按顺序运行 Cell | Run cells in order
+过程中如果遇到一些incompatible可以忽略，只有遇到具体问题才需要处理，可以到这里提交问题讨论，也可以直接问Claude/GPT或者其他AI
+If you encounter some incompatibilities during the process, you can ignore them. You only need to deal with specific problems. You can submit questions for discussion here, or you can directly ask Claude/GPT or other AI experts.
 
 ```
 Cell 1   →  配置路径和参数       Set paths & parameters
@@ -78,8 +79,6 @@ Cell 6   →  20秒片段测试推理 (~1–3 min) ← 务必先跑这个！Test
 Cell 7   →  完整歌曲推理 (~15–30 min)   Full song inference
 Cell 8   →  打包下载结果          Package & download results
 ```
-
----
 
 ## 参数说明 | Parameters
 
